@@ -1,0 +1,83 @@
+ body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            border-bottom: 2px solid #28a745;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        .navbar-nav .nav-link.active {
+            background-color: #28a745;
+            border-radius: 0.5rem;
+        }
+        .content {
+            padding: 20px;
+        }
+        .card {
+            border: none;
+            border-radius: 1rem;
+        }
+        .card-header {
+            background-color: #28a745;
+            color: white;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        .table thead th {
+            background-color: #28a745;
+            color: white;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .btn i {
+            margin-right: 5px;
+        }
+        @media (max-width: 600px) {
+            .btn span {
+                display: none;
+            }
+            .btn-sm {
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
+            .btn-container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+.navbar-dark .navbar-nav .nav-link.active {
+    color: white !important; /* Define o texto como branco */
+    border: 2px solid #007bff; /* Adiciona uma borda azul */
+    border-radius: 4px; /* Arredonda os cantos da borda */
+    padding: 5px 10px; /* Adiciona espaçamento interno para melhor visualização */
+    background: #007bff;
+}
+       
+/*Sobra para caixa */
+.shadow-custom {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor da borda */
+}
+
+/* Classe genérica para botões com ícones */
+.btn-responsivo {
+  
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media query para telas menores que 560px configurando */
+@media (max-width: 560px) {
+    .btn-responsivo .texto-botao {
+        display: none; /* Oculta o texto quando a tela for menor que 560px */
+    }
+
+    .btn-responsivo i {
+        margin: 0 auto; /* Centraliza o ícone no botão */
+    }
+}
+
